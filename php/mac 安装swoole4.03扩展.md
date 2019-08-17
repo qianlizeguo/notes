@@ -1,3 +1,5 @@
+###所有安装包全部在 /usr/local/lib目录下
+
 1.安装http2
 
  a.下载  [nghttp2](https://github.com/redis/hiredis/archive/v0.13.3.tar.gz), 解压 sudo tar -zxvf  nghttp2-1.32.0.tar.xz
