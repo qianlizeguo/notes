@@ -212,6 +212,19 @@ ssh://git@gitlab.domain.com:1022/test/projectname.git
  
  #### 四、配置gitlab-runner连上gitlab
  
+ new:建议如下命令注册：
+ ```
+ docker exec -it gitlab-runner gitlab-runner register -n \
+   --url http://mall.boxfantasia.com.cn:8081/ \
+   --registration-token QGAKwipD-9vBrdYv-yhV \
+   --executor docker \
+   --description "deploy" \
+   --docker-image "docker:stable" \
+     --docker-privileged \
+    --docker-volumes /var/run/docker.sock:/var/run/docker.sock
+ ```
+ 
+ 
  1、注册gitlab-runner
  
  ```
